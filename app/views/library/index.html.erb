@@ -1,0 +1,16 @@
+<table border="1px">
+  <tr>
+    <th>№: </th>
+    <th>Name: </th>
+    <th>Age: </th>
+    <th>Book: </th>
+  </tr>
+
+  <% @authors.each do |author| %>
+    <tr>
+      <td><%= author.id %></td>
+      <td><%= author.name %></td>
+      <td><%= author.age %></td>
+    </tr>
+  <% end %>
+</table>
